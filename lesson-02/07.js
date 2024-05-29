@@ -8,8 +8,8 @@ let passportMarried = {
     }
 };
 
-let passportMarried2 = { ...passportMarried, address: { ...passportMarried.address } }
-passportMarried2.married = true
+let passportMarried2 = { ...passportMarried, married : true, address: { ...passportMarried.address } }
+
 
 console.log(passportMarried);
 console.log(passportMarried2);
