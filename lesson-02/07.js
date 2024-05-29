@@ -1,14 +1,15 @@
 // code
-let passportWithAddress = {
+let passportMarried = {
     name: "Petr",
     surname: "Petrov",
     address: {
         country: "USA",
-        city: "LA"
+        city: "Bobryisk"
     }
 };
-let passportWithAddress2 = {...passportMarried, address: {...passportMarried.address}}
-passportWithAddress2.married = true;
 
-console.log(passportWithAddress)
-console.log(passportWithAddress2)
+let passportMarried2 = { ...passportMarried, address: { ...passportMarried.address } }
+passportMarried2.married = true
+
+console.log(passportMarried);
+console.log(passportMarried2);
