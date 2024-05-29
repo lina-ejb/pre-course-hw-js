@@ -8,7 +8,13 @@ let passportWithAddress = {
     }
 };
 
-let passportWithAddress2 = {...passportWithAddress,married: true, address: {...passportWithAddress.address}}
+let passportWithAddress2 = {
+    ...passportMarried,
+    address: {
+        ...passportMarried.address
+    },
+    married: true
+}
 
 console.log(passportWithAddress)
 console.log(passportWithAddress2)
