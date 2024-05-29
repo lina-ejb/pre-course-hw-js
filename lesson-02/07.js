@@ -1,3 +1,4 @@
+// code
 let passportMarried = {
     name: "Petr",
     surname: "Petrov",
@@ -7,15 +8,8 @@ let passportMarried = {
     }
 };
 
+let passportMarried2 = { ...passportMarried, married : true, address: { ...passportMarried.address } }
+passportMarried2.married = true
 
-let passportMarried2 = {
-    ...passportMarried,
-    address: {
-        ...passportMarried.address
-    },
-    married: true
-};
-
-
-console.log(passportMarried);
-console.log(passportMarried2);
+console.log(passportMarried)
+console.log(passportMarried2)
